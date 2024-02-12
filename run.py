@@ -109,3 +109,6 @@ def play(word):
     print("Word list: Animals")
     print(complete_word)
 
+    while tries > 0:
+        guess = input("Please guess a letter or a word: ").upper()
+
