@@ -147,6 +147,7 @@ def play(word):
             print(random.choice(right_guess))
             print(complete_word)
             guessed_letters.append(guess)
+            print(display_hangman(tries))
             
             if complete_word == word:
                winner = ("Winner winner, chicken dinner!"
