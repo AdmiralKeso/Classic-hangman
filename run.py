@@ -99,3 +99,6 @@ def choose_word():
     word = random.choice(words).upper()
     return word
 
+def play(word):
+    global guessed_letters
+    global tries
