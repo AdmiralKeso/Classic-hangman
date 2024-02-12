@@ -112,3 +112,7 @@ def play(word):
     while tries > 0:
         guess = input("Please guess a letter or a word: ").upper()
 
+        if guess in guessed_letters:
+            print("You have already guessed that letter or word")
+            guessed_letters.append(guess)
+            guessed_letters.append(guess)
