@@ -150,9 +150,6 @@ def play(word):
             print(display_hangman(tries))
             
             if complete_word == word:
-               winner = ("Winner winner, chicken dinner!"
-                         "Congratulations! You have won the game!"
-                         "You have won!")
-               print(random.choice(winner))
-               return
+               print("Winner Winner! Chicken Dinner!")
+               break
 
