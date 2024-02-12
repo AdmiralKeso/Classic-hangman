@@ -87,6 +87,12 @@ guessed_word = []
 #Global variable for tries
 tries = 6
 def main():
+    global guessed_letters
+    global tries
+    
+    print("Welcome to hangman!")
+    print("The goal of the game is to guess the word. To guess the word type your letter of choice. Guess the word before you get hanged. Good luck!")
+    start = input("Press enter to start the game...")
 
     while True:
         play(choose_word())
