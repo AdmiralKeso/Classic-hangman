@@ -1,5 +1,7 @@
 import random
-#Global variable for tries
+
+
+# Global variable for tries
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
@@ -74,18 +76,29 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-#Global variable for words
+
+# Global variable for words
 words = ('cat dog tiger gorilla giraffe mouse beaver camel' 
          'coyote wolf rat ant panther puma aardvark bear' 
          'lynx fox elephant swan duck shark badger').split()
-#Global variable for guessed
+
+
+# Global variable for guessed
 guessed = False
-#Global variable for guessed letters
+
+
+# Global variable for guessed letters
 guessed_letters = []
-#Global variable for guessed word
+
+
+# Global variable for guessed word
 guessed_word = []
-#Global variable for tries
+
+
+# Global variable for tries
 tries = 6
+
+
 def main():
     global guessed_letters
     global tries
@@ -110,9 +123,11 @@ def main():
             print("See you later!")
             break
 
+
 def choose_word():
     word = random.choice(words).upper()
     return word
+
 
 def play(word):
     global guessed_letters
@@ -140,22 +155,21 @@ def play(word):
             guessed_letters.append(guess)
             print(display_hangman(tries))
             print(complete_word)
-            
+
         else:
-            right_guess = ("Wooow! you guessed " + guess + " and you were right!",
-                           "Good job! " + guess + " is in the word", 
+            right_guess = ("You guessed " + guess + " and you were right!",
+                           "Good job! " + guess + " is in the word",
                            guess + " is right!")
-            for i in range (len(word)):
-               if word[i] == guess:
-                  complete_word = complete_word[:i] + guess + complete_word[i+1:]
+            for i in range(len(word)):
+                if word[i] == guess:
+                    complete_word = complete_word[:i] + guess + complete_word[i+1:]
             print(random.choice(right_guess))
             print(complete_word)
             guessed_letters.append(guess)
             print(display_hangman(tries))
-            
             if complete_word == word:
-               print("Winner Winner! Chicken Dinner!")
-               break
+                print("Winner Winner! Chicken Dinner!")
+                break
 
 
 if __name__ == "__main__":
