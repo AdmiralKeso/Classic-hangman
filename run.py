@@ -95,6 +95,8 @@ def main():
     start = input("Press enter to start the game...")
 
     while True:
+        guessed_letters = []
+        tries = 6
         play(choose_word())
    
         play_again = input("Thanks for playing! Play again? (Yes/No)")
