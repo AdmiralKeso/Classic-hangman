@@ -95,3 +95,7 @@ def main():
         if play_again != "Yes":
             break
 
+def choose_word():
+    word = random.choice(words).upper()
+    return word
+
