@@ -153,3 +153,6 @@ def play(word):
                print("Winner Winner! Chicken Dinner!")
                break
 
+
+if __name__ == "__main__":
+    main()
