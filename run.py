@@ -125,4 +125,13 @@ def play(word):
             guessed_letters.append(guess)
             print(complete_word)
             print(display_hangman(tries))
+        else:
+            right_guess = ("Wooow! you guessed " + guess + " and you were right!",
+                           "Good job! " + guess + " is in the word", 
+                           guess + " is right!")
+            for i in range (len(word)):
+               if word[i] == guess:
+                  complete_word = complete_word[:i] + guess + complete_word[i+1:]
+            print(random.choice(right_guess))
+            print(complete_word)
             guessed_letters.append(guess)
