@@ -114,5 +114,15 @@ def play(word):
 
         if guess in guessed_letters:
             print("You have already guessed that letter or word")
+        elif guess not in word:
+            wrong_guess = ("Wrong guess!",
+                           "Womp womp...",
+                           "Oh no!",
+                           "Take another guess!",
+                           "Close. But not close enough.")
+            print(random.choice(wrong_guess))
+            tries -= 1
             guessed_letters.append(guess)
+            print(complete_word)
+            print(display_hangman(tries))
             guessed_letters.append(guess)
