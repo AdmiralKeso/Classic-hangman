@@ -91,7 +91,12 @@ def main():
     global tries
 
     print("Welcome to hangman!")
-    print("The goal of the game is to guess the word. To guess the word type your letter of choice. Guess the word before you get hanged. Good luck!")
+    print("\n")
+    print("The goal of the game is to guess the word.")
+    print("To guess the word type your letter of choice.")
+    print("Guess the word before you get hanged.")
+    print("Good luck!")
+    print("\n")
     start = input("Press enter to start the game...")
 
     while True:
