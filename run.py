@@ -109,9 +109,6 @@ def main():
         elif play_again == "no":
             print("See you later!")
             break
-        else:
-            print("Please write yes or no.")
-            break
 
 def choose_word():
     word = random.choice(words).upper()
