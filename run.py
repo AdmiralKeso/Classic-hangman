@@ -138,8 +138,9 @@ def play(word):
             print(random.choice(wrong_guess))
             tries -= 1
             guessed_letters.append(guess)
-            print(complete_word)
             print(display_hangman(tries))
+            print(complete_word)
+            
         else:
             right_guess = ("Wooow! you guessed " + guess + " and you were right!",
                            "Good job! " + guess + " is in the word", 
