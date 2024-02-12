@@ -118,7 +118,6 @@ def play(word):
 
     complete_word = "_" * len(word)
 
-    print("Welcome to Hangman Classic!")
     print("Word list: Animals")
     print(complete_word)
 
