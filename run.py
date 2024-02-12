@@ -98,9 +98,14 @@ def main():
         guessed_letters = []
         tries = 6
         play(choose_word())
-   
-        play_again = input("Thanks for playing! Play again? (Yes/No)")
-        if play_again != "Yes":
+        play_again = input("Thanks for playing! Play again? (Yes/No)").lower()
+        if play_again == "yes":
+            continue
+        elif play_again == "no":
+            print("See you later!")
+            break
+        else:
+            print("Please write yes or no.")
             break
 
 def choose_word():
