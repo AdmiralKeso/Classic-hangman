@@ -120,6 +120,7 @@ def play(word):
 
     complete_word = "_" * len(word)
 
+    print(display_hangman(tries))
     print("Word list: Animals")
     print(complete_word)
 
