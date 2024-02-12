@@ -135,3 +135,11 @@ def play(word):
             print(random.choice(right_guess))
             print(complete_word)
             guessed_letters.append(guess)
+            
+            if complete_word == word:
+               winner = ("Winner winner, chicken dinner!"
+                         "Congratulations! You have won the game!"
+                         "You have won!")
+               print(random.choice(winner))
+               return
+
