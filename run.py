@@ -86,3 +86,12 @@ guessed_letters = []
 guessed_word = []
 #Global variable for tries
 tries = 6
+def main():
+
+    while True:
+        play(choose_word())
+   
+        play_again = input("Thanks for playing! Play again? (Yes/No)")
+        if play_again != "Yes":
+            break
+
