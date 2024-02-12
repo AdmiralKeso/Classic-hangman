@@ -1,6 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 #Global variable for tries
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
