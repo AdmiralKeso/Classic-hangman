@@ -102,3 +102,6 @@ def choose_word():
 def play(word):
     global guessed_letters
     global tries
+
+    complete_word = "_" * len(word)
+
