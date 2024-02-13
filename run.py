@@ -140,10 +140,10 @@ def play(word):
     print(complete_word)
 
     while tries > 0:
-        guess = input("Please guess a letter or a word: ").upper()
+        guess = input("Please guess a letter: ").upper()
 
         if guess in guessed_letters:
-            print("You have already guessed that letter or word")
+            print("You have already guessed that letter")
         elif guess not in word:
             wrong_guess = ("Wrong guess!",
                            "Womp womp...",
