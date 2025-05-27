@@ -1,4 +1,4 @@
-# Quiz Master 2022
+# Hangman in python
 
 [Link to Live Site](https://classichangman-281d9c7c84a8.herokuapp.com/)
 
